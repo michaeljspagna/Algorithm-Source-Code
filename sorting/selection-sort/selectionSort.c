@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 //Time Complexity: O(n)
 //Space Complexity: O(1)
 
@@ -5,7 +7,7 @@ void selectionSort(int array[], int size){
     int i, j, minimunIndex;
     for(i=0; i<size; i++){
         minimunIndex = i;
-        
+
         for(j=i; j<size; j++){
             if(array[j] < array[minimunIndex]){
                 minimunIndex = j;
